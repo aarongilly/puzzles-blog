@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: Blog
+---
+<p class="intro">Occasional notes on puzzle design and this site. Updated... occasionally.</p>
+<ul class="post-list">
+  {% for post in collections.posts | reverse %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <span class="post-date">{{ post.date | readableDate }}</span>
+  </li>
+  {% endfor %}
+</ul>

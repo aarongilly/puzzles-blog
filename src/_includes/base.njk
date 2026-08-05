@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title or "Blog" }} — Aaron's Puzzles</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Aaron's Puzzles Blog</a></h1>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <p><a href="https://aaronspuzzles.com">← Back to Aaron's Puzzles</a></p>
+    </footer>
+  </body>
+</html>
