@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
   })
 
   return {
+    pathPrefix: '/Blog/',
     dir: {
       input: 'src',
       output: 'dist',
